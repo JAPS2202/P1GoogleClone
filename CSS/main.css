@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13 px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{ /*General*/
+    width: 100%;
+    height: 60px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .nav-right-section{ /*La barra de navegación donde está el header se aplicará el estilo, es decir, algo más específico*/
+    width: 250 px;
+    height: auto;
+    display: flex;
+    list-style: none; /*Para quitar los puntos de las listas*/
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a{
+    margin-right: 10px;
+    color:#000000;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav .nav-right-section .menu-icon{
+    background-image: url("https://static.thenounproject.com/png/756729-200.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 25px;
+    height: 25px;
+
+}
+
+nav .nav-right-section img{
+    border-radius: 50%;
+    margin-left: 14 px;
+    
+    }
+main{
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-logo img{
+    height: 92px;
+    width: 272px;
+}
+
+main .main-input{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5; /*con el tamaño de un pixel se general una línea muy delgada y con el color*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 450px;
+    height:  45px;
+    border: none;
+    outline: none;
+}
+
+/*Efectos de sombra*/
+main .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+main .main-input .search-icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input .micro-icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    color: #222;
+    background-color: #f8f8f8;
+}
+
+footer{
+    width: 100%;
+    height: 50px; /*Que abarque todo el ancho de la pantalla pero de altura solo ocupe 50pixeles*/
+    position: absolute;
+    bottom: 0; /*Estas últimas 2 líneas permiten que el footer siempre se mantenga en la posición de abajo*/
+    display: grid; /*Divide la pantallas en las columnas que se le indiquen*/
+    grid-template-columns: 1fr 1fr;/*Aquí se indica la cantidad de columnas que se van a necesitar*/
+    align-items: center; /*Indicar que los items estén alineados */
+    font-size: 14px; /*Tamaño de la letra */
+    background-color: #f2f2f2; /*Color del fondo*/
+    border-top: 1px solid #e4e4e4;/*Resalta el color de la línes del borde de arriba*/
+}
+/*Ahora toca personalizar los elementos ul en general del footer, entonces para ello se aplicará un estilo general*/
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0; /*Realiza que los elementos se alinen y ya no estén uno encima de otro*/
+
+}
+
+/*Acomodar los elementos en la parte izquierda, debido a que sin esto se ven como centrados*/
+footer .footer-left{
+    justify-self: left;
+}
+
+/*Acomodar los elementos en la parte de la derecha, debido a que sin esto se ven al principio de la columna*/
+footer .footer-right{
+    justify-self: right;
+}
+
+/*Ahora se van a acomodar los elementos que están dentro del li, que son las a, es decir las palabras*/
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+}
